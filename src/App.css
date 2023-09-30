@@ -1,0 +1,588 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ===================================== HOME PAHE ======================================================================== */
+/* nav */
+.nav {
+  width: 100%;
+  height: 86px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.name-site {
+  display: flex;
+  margin-top: 17px;
+  gap: 10px;
+}
+.site-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #000000;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+.red {
+  color: red;
+}
+ul {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+li {
+  list-style-type: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #00d9f5;
+}
+li:hover {
+  color: #00d9f5;
+}
+.menu {
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+  display: none;
+}
+.fa-bars {
+  font-size: 25px;
+  margin-top: 13px;
+  margin-left: 13px;
+}
+/* ImageSlider */
+.Imageslider {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.Slider-img {
+  width: 100%;
+  height: 90vh;
+}
+/* HomeShowAllGames */
+.top-games {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #000000;
+}
+.AllGamesResult {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, minmax(350px, 1fr));
+  gap: 30px;
+}
+.H-card {
+  width: 330px;
+  height: 400px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.poster-h {
+  width: 330px;
+  height: 200px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.img-d-h {
+  width: 330px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(210, 210, 210);
+}
+.titale-h {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 51px;
+  text-align: center;
+  margin-top: 10px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.item-h {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.relege-date-h {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 51px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.window-h {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+}
+/* Footer */
+.footer {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.footer-text {
+  position: relative;
+  text-align: center;
+  top: 30px;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+}
+/* lodder */
+.loder {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lodder {
+  height: 200px;
+  width: 200px;
+}
+/* ========================================== GameDataShow HOME PAge ================================================================*/
+.component-home {
+  height: auto;
+  width: 100%;
+}
+.get-img {
+  height: auto;
+  width: 100%;
+}
+.img-compo {
+  height: 750px;
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+  position: relative;
+}
+.g-name {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 300px;
+}
+.game-name {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 91px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.des {
+  text-align: center;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 51px;
+  margin-top: 30px;
+  color: #000000;
+  cursor: pointer;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.des-copm {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.description-p {
+  height: auto;
+  width: 1200px;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+}
+.data-btn {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.btn {
+  width: 1005px;
+  height: 76px;
+  background: linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.addistinal-impho {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #000000;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.add-impho {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin-top: 50px;
+}
+.add-text {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #000000;
+}
+.min-sys-req {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  text-align: center;
+  color: #000000;
+  margin-top: 50px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.min-req-st {
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 12px;
+  margin-top: 50px;
+}
+.mim-text {
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #000000;
+}
+
+/* responsive code HOME and DATASHOW PAges */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .list {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .Slider-img {
+    height: 90vh;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  .footer-text {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .list {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .Slider-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .list {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .Slider-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .list {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .Slider-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .list {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+/* responsive DATASHOW PAges ===============================================================================*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .img-compo {
+    height: auto;
+    width: 100%;
+  }
+  .g-name {
+    top: 150px;
+  }
+  .data-btn {
+    height: auto;
+    width: 100%;
+  }
+  .btn {
+    width: 350px;
+    height: 76px;
+  }
+  .get-img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .description-p {
+    font-size: 20px;
+  }
+  .m-img-di {
+    height: auto;
+    width: 100%;
+    background-color: gray;
+  }
+  .img-m {
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .img-compo {
+    height: auto;
+    width: 100%;
+  }
+  .g-name {
+    top: 100px;
+  }
+  .data-btn {
+    height: auto;
+    width: 100%;
+  }
+  .btn {
+    width: 350px;
+    height: 76px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .img-compo {
+    height: auto;
+    width: 100%;
+  }
+  .g-name {
+    top: 200px;
+  }
+  .data-btn {
+    height: auto;
+    width: 100%;
+  }
+  .btn {
+    width: 650px;
+    height: 76px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* ======================================= MMORPG PAGE DESING ===================================================================================== */
+.mmorpg {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-top: 10px;
+}
+.img-m {
+  width: 100%;
+}
+.m-t {
+  text-align: center;
+  margin-top: 20px;
+  font-family: "Michroma";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 51px;
+  color: #000000;
+}
+.mmprpgdata {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* ======================================= SHHOTER PAGE DATA =================================================================================== */
+.shooterdata {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, minmax(350px, 1fr));
+  gap: 30px;
+}
+/* ======================================= SHHOTER PAGE DATA =================================================================================== */
+.mobadata {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, minmax(350px, 1fr));
+  gap: 30px;
+}
+/* ======================================= ANIME racingdata socialdata PAGE DATA =================================================================================== */
+.Animedata,
+.racingdata,
+.socialdata {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, minmax(350px, 1fr));
+  gap: 30px;
+}
+/* ======================================= STRATEGY fightingdata sci-ficdata PAGE DATA =====================================================================================*/
+.STRATEGYDATA,
+.sci-ficdata,
+.fightingdata {
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 50px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, minmax(350px, 1fr));
+  gap: 30px;
+}
+/* Hameburger menu toggle */
+.hame-nav {
+  width: 100%;
+  height: auto;
+  background-color: rgb(251, 248, 248);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.ul {
+  display: grid;
+}
